@@ -5,6 +5,16 @@
    src: url(fontes/thrifty-bold.ttf);
 }
 
+@font-face {
+   font-family: 'thrifty-extralight';
+   src: url(fontes/thrifty-extralight.ttf);
+}
+
+@font-face {
+   font-family: 'aileron';
+   src: url(fontes/Aileron-Regular.otf);
+}
+
 :root{
    --cor01: #a7a9d9;
    --cor02: #f2f2f2;
@@ -17,11 +27,12 @@
 *{
    margin: 0;
    box-sizing: border-box;
-   font-family: 'thrifty-bold';
    font-size: 16px;
 }
 
+
 header{
+   font-family: 'thrifty-bold', Arial, Helvetica, sans-serif;
    height: 4.25rem;
    background-color: #fff;
    font-weight: bold;
@@ -178,4 +189,42 @@ img{
    width: 1680px;
    height: 610px;
    object-fit: contain;
+}
+
+article{
+   display: flex;
+   padding-top: 50px;
+   padding-bottom: 100px;
+   font-family: 'aileron' ,Arial, Helvetica, sans-serif;
+   text-align: left;
+   margin: 0 auto;
+   width: 80%;
+   max-width: 80vw;
+}
+
+h1{
+   font-size: 2.5rem;
+   padding-bottom: 10px;
+}
+
+.first-box{
+   padding: 10px;
+   min-width: 320px;
+   gap: 0.25vw;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.left-text-box{
+   min-width: 310px;
+   width: 50%;
+}
+
+.right-image-box{
+   max-width: 500px;
+   min-width: 310px;
+   width: 50%;
+   background: linear-gradient(to bottom, var(--cor01),  var(--cor03), var(--cor04));
+   height: 500px;
+   border-radius: 15px;
 }
