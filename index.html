@@ -4,50 +4,77 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Pay-it Brasil</title>
-   <link rel="stylesheet" href="style.css">
+   <title>Pay-It Brasil</title>
+   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <header id="cabecalho">
-      <a href="index.html"><img src="imagens/pay-it_logo-whitebackground.png" alt="logo Pay-it" id="logo"></a>
-      <nav id="userNav">
-         <a class="navA" href="#">Home</a>
-         <a class="navA" href="#">Sobre Nós</a>
-         <a class="navA" href="#">Contato</a>
-         <a class="navA" href="#">Blog</a>
-      </nav>
-      <nav id="userAccess">
-         <a class="navA" href="#">Ajuda</a>
-         <a class="navA" href="#">Acessar minha conta</a>
-         <a class="navA" href="#">Criar uma conta</a>
-      </nav>
-   </header>
-   <section id="carrossel">
-      <div id="navigator">
-         <button class="button button-left"><img class="seta" src="imagens/seta-esquerda.png" alt="seta-esquerda"></button>
-         <div class="dots current-dot"></div>
-         <div class="dots"></div>
-         <div class="dots"></div>
-         <button class="button button-right"><img class="seta" src="imagens/seta-direita.png" alt="seta-direita.png"></button>
+
+   <!--Navbar-->
+   <nav id="navbar">
+      <div id="navbar-container">
+         <a href="#"><img id="logo" src="imagens/pay-it_logo-whitebackground.png" alt="logo pay-it brasil"></a>
+         <ul class="navbar-items">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Sobre Nós</li></a>
+            <a href="#"><li>Contato</li></a>
+            <a href="#"><li>Login</li></a>
+            <a id="nav-btn" href="#"><li id="btn-li">Criar Conta</li></a>
+         </ul>
       </div>
-      <div class="container">
-         <div class="slide current-slide"><img src="imagens/menina de vermelho.png" alt="menina de vermelho"></div>
-         <div class="slide"><img src="imagens/mulher de marrom.png" alt="menina de vermelho"></div>
-         <div class="slide"><img src="imagens/homem de azul.png" alt="menina de vermelho"></div>
-      </div>
-   </section>
-   <main>
-      <article>
-         <div class="first-box">
-            <div class="left-text-box">
-               <h1> Nunca mais tenha dor de cabeça com seus meios de pagamento!💰</h1>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquid animi accusamus molestias non, repellendus incidunt iusto sit quo ea sunt quae. Facere esse praesentium necessitatibus porro magnam ratione provident.</p>
-            </div>
-            <div class="right-image-box">
-            </div>
+   </nav>
+
+   <!--Carrossel-->
+   <header id="carrossel">
+      <div id="carrossel-container">
+         <div id="controls-container">
+            <a href="#" class="btn"></a>
+            <a href="#" class="btn"></a>
          </div>
-      </article>
-   </main>
-   <script src="index.js"></script>
+         <div id="slidescontainer">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+         </div>
+      </div>
+   </header>
+
+   <!--Comercial 1-->
+   <div id="comercial1">
+      <div id="comercial-container1">
+         <div id="comercial-text1">
+            <h1>Chega de dor de cabeça com seus meios de pagamento!💰</h1>
+            <p>A Pay-It está aqui para te ajudar com as melhores soluções e impulsionar o seu negócio</p>
+            <a href="#" id="saiba-mais">Saiba mais</a>
+         </div>
+         <div id="institutional-card1">
+            <img src="imagens/meios-de-pagamento.png" alt="duas mãos e uma máquina de cartão">
+         </div>
+      </div>
+   </div>
+
+   <!--Cálculo de Taxa-->
+   <form id="calculo-taxa">
+      <div id="calculo-container">
+
+      </div>
+   </form>
+
+   <!--Comercial 2-->
+   <div id="comercial2">
+      <div id="comercial-container2">
+         <div id="comercial-text2">
+            <h1>A Pay-It é a melhor parceira para o seu negócio</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, soluta?</p>
+         </div>
+         <div id="institutional-card2"></div>
+      </div>
+   </div>
+
+   <!--Footer-->
+   <footer>
+      <div class="footer-columns"></div>
+      <div class="footer-columns"></div>
+      <div class="footer-columns"></div>
+   </footer>
 </body>
 </html>

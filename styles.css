@@ -1,0 +1,163 @@
+@charset 'UTF-8';
+
+@font-face {
+   font-family: 'aileron';
+   src: url(fontes/Aileron-Regular.otf);
+}
+
+:root{
+   --cor01: #a7a9d9;
+   --cor02: #f2f2f2;
+   --cor03: #5b5fa6;
+   --cor04: #4146a6;
+   --corDestaque: #f27f3d;
+} 
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   font-family: 'aileron', sans-serif;
+   background-color: #eee;
+   font-size: 16px;
+}
+
+/*Navbar*/
+#navbar{
+   width: 100%;
+   height: 80px;
+   background: #eee;
+}
+
+#navbar-container{
+   width: 80%;
+   height: 100%;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.navbar-items{
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   font-size: 1rem;
+   font-weight: 600;
+}
+
+#logo{
+   width: 200px;
+}
+
+.navbar-items li{
+   padding: 10px 20px;
+   letter-spacing: 1px;
+}
+
+.navbar-items a{
+   color: var(--cor04);
+   text-decoration: none;
+   transition: all 300ms ease-in-out;
+   margin: 0 2px;
+}
+
+.navbar-items > a:hover{
+   color: var(--cor03);
+}
+
+.navbar-items > a:nth-last-of-type(2){
+   border-left: 2px dotted #c0c0c0;
+   margin-left: 20px;
+   border-radius: none;
+}
+
+#nav-btn{
+   background: linear-gradient(to bottom, var(--cor03), var(--cor04));
+   border-radius: 10px;
+   color: var(--cor02);
+   transition: background-color 0.3s;
+}
+
+#nav-btn:hover{
+   background-color: var(--corDestaque);
+}
+
+#btn-li{
+   color: var(--cor02);
+   font-weight: 500;
+}
+
+/*Carrossel*/
+#carrossel{
+   width: 100%;
+   height: 607px;
+   background: radial-gradient(circle at bottom, var(--cor01), var(--cor04));
+}
+
+/*Comercial 1*/
+#comercial1{
+   width: 100%;
+   padding: 50px;
+}
+
+#comercial-container1{
+   padding: 10px;
+   width: 80%;
+   max-width: 1100px;
+   display: flex;
+   gap: 10px;
+   margin: 0 auto;
+}
+
+#comercial-text1{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   gap: 35px;
+}
+
+#comercial-text1 h1{
+   font-size: 2.65rem;
+   font-weight: 600;
+}
+
+#comercial-text1 p{
+   font-size: 2rem;
+   font-weight: 550;
+}
+
+#institutional-card1{
+   width: 50%;
+   height: 630px;
+   background: linear-gradient(to top, var(--cor03), var(--cor04) 52%);
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+}
+
+#institutional-card img{
+   width: 100%;
+   height: 100%;
+}
+
+#saiba-mais{
+   text-decoration: none;
+   padding: 16px 28px;
+   color: #eee;
+   background-color: var(--cor04);
+   border-radius: 50px;
+   text-align: center;
+   display: inline-block;
+   max-width: 170px;
+   transition: all 300ms ease-in-out;
+   font-size: 1.25rem;
+}
+
+#saiba-mais:hover{
+   background-color: var(--corDestaque);
+}
+
