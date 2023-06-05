@@ -26,69 +26,62 @@ body{
 }
 
 /*Navbar*/
-#navbar{
+
+header{
    width: 100%;
-   height: 80px;
-   background: #eee;
+   height: 77px;
 }
 
-#navbar-container{
+.nav-bar-container{
+   margin: 0 auto;
    width: 80%;
-   height: 100%;
-   margin: auto;
    display: flex;
    align-items: center;
    justify-content: space-between;
 }
 
-.navbar-items{
+.nav-bar-items{
    display: flex;
    justify-content: space-between;
-   list-style: none;
-   font-size: 1rem;
-   font-weight: 600;
+   gap: 20px;
 }
 
-#logo{
-   width: 200px;
+.nav-bar-nav, .nav-bar-login{
+   display: flex;
+   justify-content: space-between;
+   gap: 15px;
 }
 
-.navbar-items li{
-   padding: 10px 20px;
-   letter-spacing: 1px;
-}
-
-.navbar-items a{
-   color: var(--cor04);
+.nav-bar-nav a, .nav-bar-login a{
    text-decoration: none;
-   transition: all 300ms ease-in-out;
-   margin: 0 2px;
+   padding: 10px 20px;
+   border-radius: 50px;
+   color: var(--cor04);
+   transition: 500ms ease-in-out;
+   font-weight: 600;
+   letter-spacing: 1.5px;
 }
 
-.navbar-items > a:hover{
-   color: var(--cor03);
+.nav-bar-login{
+   border-left: 2px dotted var(--cor01);
+   padding-left: 20px;
 }
 
-.navbar-items > a:nth-last-of-type(2){
-   border-left: 2px dotted #c0c0c0;
-   margin-left: 20px;
-   border-radius: none;
+.nav-bar-nav a:hover, .nav-bar-login a:hover{
+   background-color: var(--cor04);
+   color: var(--cor02);
+   font-weight: 500;
 }
 
 #nav-btn{
    background: linear-gradient(to bottom, var(--cor03), var(--cor04));
-   border-radius: 10px;
    color: var(--cor02);
-   transition: background-color 0.3s;
+   font-weight: 500;
+   transition: 300ms ease-in-out;
 }
 
 #nav-btn:hover{
-   background-color: var(--corDestaque);
-}
-
-#btn-li{
-   color: var(--cor02);
-   font-weight: 500;
+   background: linear-gradient(to top, var(--corDestaque), #d3703696);
 }
 
 /*Carrossel*/
@@ -118,6 +111,7 @@ body{
    display: flex;
    flex-direction: column;
    gap: 35px;
+   color: #222222
 }
 
 #comercial-text1 h1{
@@ -142,6 +136,7 @@ body{
 #institutional-card img{
    width: 100%;
    height: 100%;
+   object-fit: fill;
 }
 
 #saiba-mais{
