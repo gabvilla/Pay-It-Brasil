@@ -52,12 +52,20 @@ header{
    gap: 15px;
 }
 
+#nav-btn{
+   background: linear-gradient(to bottom, var(--cor03), var(--cor04));
+   color: var(--cor02);
+   font-weight: 500;
+   transition: 500ms ease-in-out;
+}
+
+
 .nav-bar-nav a, .nav-bar-login a{
    text-decoration: none;
    padding: 10px 20px;
    border-radius: 50px;
    color: var(--cor04);
-   transition: 500ms ease-in-out;
+   transition: 400ms ease-in-out;
    font-weight: 600;
    letter-spacing: 1.5px;
 }
@@ -70,14 +78,6 @@ header{
 .nav-bar-nav a:hover, .nav-bar-login a:hover{
    background-color: var(--cor04);
    color: var(--cor02);
-   font-weight: 500;
-}
-
-#nav-btn{
-   background: linear-gradient(to bottom, var(--cor03), var(--cor04));
-   color: var(--cor02);
-   font-weight: 500;
-   transition: 300ms ease-in-out;
 }
 
 #nav-btn:hover{
@@ -87,7 +87,7 @@ header{
 /*Carrossel*/
 #carrossel{
    width: 100%;
-   height: 607px;
+   height: 400px;
    background: radial-gradient(circle at bottom, var(--cor01), var(--cor04));
 }
 
@@ -136,7 +136,7 @@ header{
 #institutional-card img{
    width: 100%;
    height: 100%;
-   object-fit: fill;
+   object-fit: cover;
 }
 
 #saiba-mais{

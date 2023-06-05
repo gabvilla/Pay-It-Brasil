@@ -43,3 +43,14 @@ controls.forEach((button) => {
       dots[currentDot].classList.add('current-dot')
    })
 })
+
+let hamburger = document.querySelector('.hamburger');
+   
+
+   hamburger.addEventListener('click', (e) => {
+      navItems = document.querySelector('.nav-bar-items');
+      navNav = document.querySelector('.nav-bar-nav');
+
+      navItems.classList.toggle('active');
+      navNav.classList.toggle('active')
+   })
