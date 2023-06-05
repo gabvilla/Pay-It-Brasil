@@ -29,6 +29,7 @@
 
 @media only screen and (max-width: 978px){
 
+/*Nav-bar Responsiva*/
    header{
       display: flex;
       align-items: center;
@@ -92,5 +93,20 @@
 
    #logo img{
       width: 200px;
+   }
+
+   /*Comercial 1 responsivo*/
+
+   #comercial-container1{
+      width: 90%;
+      gap: 5px;
+   }
+
+   #comercial-text1 h1{
+      font-size: 2.25rem;
+   }
+
+   #comercial-text1 p{
+      font-size: 1.5rem;
    }
 }
