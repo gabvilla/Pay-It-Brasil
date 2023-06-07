@@ -80,6 +80,7 @@
       flex-direction: column;
       opacity: 0;
       transition: 300ms ease-in-out;
+      z-index: 3;
    }
 
    .nav-bar-nav.active{
@@ -97,16 +98,33 @@
 
    /*Comercial 1 responsivo*/
 
+   #comercial1{
+      padding: 25px;
+   }
+
    #comercial-container1{
-      width: 90%;
-      gap: 5px;
+      gap: 10px;
+      height: 500px;
+   }
+
+   #comercial-text1{
+      gap: 17.5px;
    }
 
    #comercial-text1 h1{
-      font-size: 2.25rem;
+      font-size:2rem;
    }
 
    #comercial-text1 p{
-      font-size: 1.5rem;
+      font-size: 1.65rem;
+   }
+
+   #institutional-card1{
+      height: auto;
+      max-width: 365px;
+   }
+
+   #saiba-mais{
+      padding: 10px 28px;
    }
 }
