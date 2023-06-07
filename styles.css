@@ -118,21 +118,11 @@ header{
 .slide{
    opacity: 0.5;
    transition: all 400ms ease-in-out;
-   transform: translateX(-100%);
 }
-
-/*.next-slide{
-   margin-left: 100%;
-}*/
 
 .current-slide{
    opacity: 1;
-   transform: translateX(100%);
 }
-
-/*.previous-slide{
-   margin-right: 100%;
-}*/
 
 
 /*Comercial 1*/

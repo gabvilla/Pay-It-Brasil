@@ -32,8 +32,12 @@ controls.forEach((btn) => {
 
       slides.forEach((slide) => {slide.classList.remove('current-slide')});
 
-      slides[currentSlide].classList.add('current-slide');
+      slides[currentSlide].scrollIntoView({
+         behavior: "smooth",
+         inline: "center"
+      });
 
-      console.log(currentSlide, isLeft)
+      
+      slides[currentSlide].classList.add('current-slide');
    });
 });
