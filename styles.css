@@ -130,12 +130,12 @@ header{
    border-radius: 20px;
    display: flex;
    align-items: center;
+   overflow: hidden;
 }
 
-#institutional-card img{
+#institutional-card1 img{
    width: 100%;
-   height: 100%;
-   object-fit: cover;
+   height: auto;
 }
 
 #saiba-mais{
